@@ -1,0 +1,32 @@
+{
+    "packages": [
+      {
+        "id": 1,
+        "title": "Fishing Tour Package",
+        "category": "Fishing Tours",
+        "duration": "5 Hours",
+        "price": 500,
+        "description": "Enjoy a full-day fishing tour on the beautiful blue waters.",
+        "image": "MainImg-2.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Resort Stay Package",
+        "category": "Resort Stays",
+        "duration": "3 Days",
+        "price": 1500,
+        "description": "Relax in luxury at our all-inclusive beach resort.",
+        "image": "MainImg-2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Combo Package",
+        "category": "Combo Packages",
+        "duration": "7 Days",
+        "price": 2500,
+        "description": "Combine fishing tours and resort stay for the ultimate vacation.",
+        "image": "MainImg-2.jpg"
+      }
+    ]
+  }
+  

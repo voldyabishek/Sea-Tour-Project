@@ -1,0 +1,55 @@
+ /* navbar css  style*/
+
+ #navbar {
+    
+  position:absolute;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   
+
+ }
+ 
+ .navbar.scrolled {
+   background: rgba(255, 255, 255, 0.9);
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ #navbarNav a{
+   color:black;
+   font-weight: bold;
+ }
+
+ #navbarNav a:hover{
+      color:rgb(32, 63, 199);
+ }
+ 
+ .logo {
+   width: 80px;
+   height:70px;
+ }
+ 
+ 
+
+
+ /* bengal waters */
+
+    #logo-text span{
+       color:rgb(0, 162, 255);
+    }
+
+    .Login{
+      font-size: 20px;
+    
+    }
+
+   #Login-icon{
+    position :absolute;
+    top:33px;
+    right:15px;
+    padding:5px;
+    font-size: 10px;
+    
+    border: solid 2px;
+    border-radius: 10px;
+    
+   }

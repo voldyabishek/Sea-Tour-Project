@@ -1,0 +1,179 @@
+/* .card-section{
+
+    background-image:url(card-BGImg2.jpg);
+    height:100vh;
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* filter btn 
+
+#filter-btn{
+
+    color:black;
+}
+
+
+#pkg-cards{
+    background-color: rgba(207, 211, 211, 0.466); /* Semi-transparent background 
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+} */
+
+
+
+
+/* ai arranged css */
+/* General Section Styling */
+.card-section {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #00416A, #E4E5E6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Category Filter Buttons */
+.category-filters .btn {
+  border: 2px solid #00416A;
+  color: #00416A;
+  background: transparent;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.category-filters .btn:hover {
+  background: #00416A;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Package Cards */
+.card {
+
+  /*  backgound classy blur effect */
+  background-color: rgba(207, 211, 211, 0.466); /* Semi-transparent background */
+  border-radius: 10px;
+  /* card bottom shadow */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Card Image with Background Overlay */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* Card Body */
+.card-body {
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00416A;
+}
+
+/* Price Styling */
+.text-primary {
+  font-size: 18px;
+  font-weight: bold;
+  color: #a79a28;
+}
+
+/* Book Now Button */
+.btn-success {
+  border: 2px solid #040c1171;
+  color: #00416A;
+  background:rgba(0, 255, 255, 0.151);
+  transition: all 0.3s ease;
+  border: 2px solid #00000021;
+  padding: 12px 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background:transparent;
+  border: 2px solid #00000021;
+  transform: scale(1.05);
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+  .card-section {
+      padding: 40px 15px;
+  }
+  .card {
+      width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .row-cols-md-2 .col, .row-cols-lg-3 .col {
+      width: 100%;
+  }
+  .category-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-section {
+      padding: 30px 10px;
+  }
+  .btn-success {
+      width: 100%;
+  }
+}

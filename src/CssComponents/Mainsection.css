@@ -1,0 +1,109 @@
+.section-1 {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.section1img {
+    /* position: fixed; */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 5px solid #007bff; /* Add a border for style */
+}
+
+.maintext {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    background-color: rgba(207, 211, 211, 0.466); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* .maintext:hover {
+    transform: translate(-50%, -50%) scale(1.05); /* Scale effect on hover 
+} */
+
+
+
+h3 {
+    color: #0000009c;
+    font-size: 2.5em;
+}
+
+p {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.book-now{
+    margin-top: 15px;
+    padding: 10px ;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.card1 {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card1 h4 {
+    margin-bottom: 15px;
+}
+
+.card1 p {
+    color: #333;
+    font-size: 1em;
+}
+
+/* meadia quires  */
+@media (max-width: 768px) {
+    .maintext {
+        top:  10px;
+        padding: 5px;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 430px) {
+    .maintext {
+        top:  10px;
+        padding: 2px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}

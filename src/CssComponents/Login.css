@@ -1,0 +1,123 @@
+/* Signup Form Section */
+#signupform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 10;
+    position: relative;
+    height: 100vh; /* Ensure the form is vertically centered */
+    background: linear-gradient(to right, #00416A, #E4E5E6);
+  }
+  
+  /* Wrapper Style */
+  .wrapper {
+    background-color: rgba(207, 211, 211, 0.466); /* Semi-transparent background */
+    border-radius: 10px;
+    /* card bottom shadow */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+     backdrop-filter: blur(10px);/* Glassmorphism effect */
+  }
+  
+  /* Title Style */
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and Icon Style */
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .row i {
+    color: #333;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .row input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .row input:focus {
+    border-color: #007bff;
+  }
+  
+  .pass {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .pass a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .pass a:hover {
+    color: #0056b3;
+  }
+  
+  /* Submit Button Style */
+  .button {
+    text-align: center;
+  }
+  
+  .button input {
+    padding: 12px 30px;
+    width: 100%;
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button input:hover {
+    background: #0056b3;
+  }
+  
+  /* Link Style */
+  .signup-link {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .signup-link a:hover {
+    color: #0056b3;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      padding: 20px;
+    }
+  }
+  
