@@ -94,8 +94,13 @@ p {
 }
 
 @media (max-width: 430px) {
+
+    .section1img{
+         height: 900px;
+        
+    }
     .maintext {
-        top:  10px;
+        top: 10px;
         padding: 2px;
     }
 

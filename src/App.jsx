@@ -27,7 +27,7 @@ function App() {
       </Routes>
      </Router>
 
-     <Review/>
+    
     
      
     </>

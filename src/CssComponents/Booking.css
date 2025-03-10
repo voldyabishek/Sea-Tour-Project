@@ -89,13 +89,15 @@ button:hover {
 
 
 .similerPackages h2{
-    background-color: rgba(207, 211, 211, 0.466); /* Semi-transparent background */
-    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(207, 211, 211, 0.466); /*  background-type:Semi-transparent; */
+    border-radius: 10px;
+    padding: 10px;
     top: 80%;
     left: 100%;
-    transform: translate(-50%, 80%);
-    background-color: rgba(207, 211, 211, 0.466); /* Semi-transparent background */
-    padding: 40px;
-    border-radius: 10px;
+   
+  
+   
    
 }

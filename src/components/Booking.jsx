@@ -50,7 +50,7 @@ const Booking = () => {
  
           
         <div className='similerPackages'>
-          <h2>Package  Details</h2>
+          <h2> Our Package  Details</h2>
           <div className='similerPackagesContainer'>
         <Package/>
             </div>

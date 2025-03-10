@@ -98,21 +98,23 @@
     background: #0056b3;
   }
   
-  /* Link Style */
-  .signup-link {
+  /* login now  and signup now button */
+
+  .Login-btn{
     text-align: center;
-    font-size: 14px;
+    margin-top: 20px;
+    background-color:#00416A;
+    border:20px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+
   }
-  
-  .signup-link a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .signup-link a:hover {
-    color: #0056b3;
-  }
+ 
   
   /* Mobile Responsiveness */
   @media screen and (max-width: 600px) {
