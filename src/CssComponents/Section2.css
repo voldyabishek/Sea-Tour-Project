@@ -1,0 +1,20 @@
+.interactive-map {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+
+
+  /* Optional: Ensure the map is responsive */
+  @media (max-width: 768px) {
+    .interactive-map {
+      padding: 10px;
+    }
+}
