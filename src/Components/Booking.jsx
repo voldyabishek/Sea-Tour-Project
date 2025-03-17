@@ -9,13 +9,12 @@ const Booking = () => {
 
     <>  
 
-      <section className='bookingform'/>
-
-        <img src='MainImg-4.jpg'  className='section1img' ></img>
+      <section className='bookingform'>
+      
         {/* form page */}
         <div className="form-container">
         <h2>Book Your Tour Package</h2>
-        <form action="submit.php" method="post">
+        <form action="https://httpbin.org/post" method="post">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required/>
 
@@ -25,14 +24,14 @@ const Booking = () => {
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" required/>
 
-            {/* <label for="destination">Select Destination:</label>
+            <label for="destination">Select Destination:</label>
             <select id="destination" name="destination" required>
                 <option value="">-- Choose a Destination --</option>
                 <option value="paris">Paris, France</option>
                 <option value="bali">Bali, Indonesia</option>
                 <option value="rome">Rome, Italy</option>
                 <option value="maldives">Maldives</option>
-            </select> */}
+            </select>
 
             <label for="date">Travel Date:</label>
             <input type="date" id="date" name="date" required/>
@@ -48,12 +47,13 @@ const Booking = () => {
                </form>
                </div>
  
-          
-        <div className='similerPackages'>
-          <h2> Our Package  Details</h2>
-          <div className='similerPackagesContainer'>
-        <Package/>
-            </div>
+        </section>
+
+         <div className='similerPackages'>
+           <h2> Our Package  Details</h2>
+           <div className='similerPackagesContainer'>
+         <Package/>
+             </div>
           </div>
           
    

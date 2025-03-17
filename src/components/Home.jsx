@@ -2,6 +2,9 @@ import React from 'react'
 import Header from './Header'
 import '../CssComponents/Mainsection.css'
 import { Link } from 'react-router-dom'
+
+import Services from './Services'
+
 const Home = () => {
 
   const scrollToBooking = () => {
@@ -9,12 +12,17 @@ const Home = () => {
     bookingSection.scrollIntoView({ behavior: 'smooth' });
 };
   return (
-    <>
+    
+        <>
       <Header/>
   
             {/* Section 1 */}
             <section className='section-1'>
-                <img src="MainImg-4.jpg" className='section1img' alt="Main" />
+                {/* <img src="MainImg-4.jpg" className='section1img' alt="Main" /> */}
+                <video className='section1video' autoPlay loop muted>
+                  <source src="MainPage-Video.mp4" type="video/mp4" />
+
+                </video>
                 <div className='maintext'>
                     <h3>Experience Fisherman Life & Adventures!</h3>
 
@@ -25,12 +33,11 @@ const Home = () => {
                     </p>
                     <Link to="/Booking"><button className=" book-now" onClick={scrollToBooking}>Book Now</button></Link>
                 </div>
-            </section>
+                </section>
 
-            {/*  review Section */}
-           
-            
-        </>
+                <Services/>
+                </>
+      
 
   )
 }

@@ -1,0 +1,104 @@
+/* Global styles for the services page */
+.services-page {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .services-header {
+    text-align: center;
+    background-color: #2d3b55;
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .services-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .services-header p {
+    font-size: 1.2rem;
+  }
+  
+  .services {
+    text-align: center;
+  }
+  
+  .services h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2d3b55;
+  }
+  
+  .services-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    color: #2d3b55;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h4 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .service-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-card {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-header h1 {
+      font-size: 2rem;
+    }
+  
+    .services-header p {
+      font-size: 1rem;
+    }
+  
+    .services h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
