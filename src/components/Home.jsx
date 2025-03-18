@@ -4,6 +4,7 @@ import '../CssComponents/Mainsection.css'
 import { Link } from 'react-router-dom'
 
 import Services from './Services'
+import Destination from './Destination'
 
 const Home = () => {
 
@@ -36,6 +37,7 @@ const Home = () => {
                 </section>
 
                 <Services/>
+                <Destination/>
                 </>
       
 

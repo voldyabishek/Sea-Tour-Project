@@ -3,12 +3,21 @@
     font-family: 'Arial', sans-serif;
     padding: 20px;
     margin: 0;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
   }
+  .service-Video{
+    
   
+  position: relative;
+  top:50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
   .services-header {
     text-align: center;
-    background-color: #2d3b55;
+    background-color: #96999f51;
     color: #fff;
     padding: 30px 20px;
     border-radius: 10px;
@@ -43,7 +52,7 @@
   }
   
   .service-card {
-    background-color: #fff;
+    background-color: #a2a8bb3e;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
