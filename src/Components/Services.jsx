@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaUmbrellaBeach, FaShip, FaCameraRetro, FaFish } from 'react-icons/fa';  // Import icons for modern look
 import '../CssComponents/Services.css';  // Make sure to create and import the CSS file for styling
 
@@ -41,7 +41,7 @@ const Services = () => {
         </div>
         {/* <div className='service-Video'>
         <video className='service-Video' autoPlay loop muted>
-          <source src="Video2.mp4" type="video/mp4" />
+          <source src="Video6.mp4" type="video/mp4" />
 
         </video>
         </div> */}

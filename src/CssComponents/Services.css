@@ -1,11 +1,17 @@
-/* Global styles for the services page */
+/*  services cards */
+
+
+.services{
+  background: linear-gradient(to right, #00416A, #E4E5E6);
+}
+
 .services-page {
     font-family: 'Arial', sans-serif;
     padding: 20px;
     margin: 0;
     /* background-color: #f4f4f4; */
-  }
-  .service-Video{
+}
+  /* .service-Video{
     
   
   position: relative;
@@ -14,10 +20,10 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-  }
+  } */
   .services-header {
     text-align: center;
-    background-color: #96999f51;
+    background-color: #7492cec0;
     color: #fff;
     padding: 30px 20px;
     border-radius: 10px;
