@@ -1,0 +1,137 @@
+/* Resort.css */
+.resort {
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+  }
+  
+  .video-background video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .resort-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    color: #fff;
+  }
+  
+  .resort-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .animated-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .animated-description {
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-item {
+    width: calc(33.333% - 20px);
+    cursor: pointer;
+  }
+  
+  .animated-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .amenities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .amenity {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+  }
+  
+  .cta-booking {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .booking-btn {
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .booking-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .image-item {
+      width: calc(50% - 20px);
+    }
+  
+    .resort-header {
+      margin-bottom: 30px;
+    }
+  
+    .resort-images .image-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .booking-btn {
+      padding: 12px 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .resort-content {
+      padding: 20px;
+    }
+  
+    .animated-title {
+      font-size: 2rem;
+    }
+  
+    .animated-description {
+      font-size: 1rem;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .image-item {
+      width: 100%;
+    }
+  
+    .booking-btn {
+      padding: 10px 20px;
+    }
+  }
+  

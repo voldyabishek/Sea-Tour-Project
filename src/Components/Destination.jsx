@@ -22,7 +22,7 @@ const Destination = () => {
         >
           <h1>Explore the Beauty</h1>
           <p>A paradise of crystal-clear waters and stunning beaches.</p>
-          <button className="btn-primary">Book Now</button>
+          <button className="btn-primary">Book now your stays</button>
         </motion.div>
       </motion.div>
 

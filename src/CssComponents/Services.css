@@ -7,8 +7,10 @@
 .service-Video{
   transform: rotate(180deg);
   position:absolute;
+  width: 100%;
   min-height: auto;
   min-width:50px;
+
   top:550px;
   z-index: -1;
 

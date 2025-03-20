@@ -9,6 +9,9 @@ import { Login } from './components/Login'
 import Review from './components/Review'
 import Gallery from './components/Gallery'
 
+import Resort from './Components/Resort'
+
+import Footer from './Components/Footer'
 function App() {
   
 
@@ -24,10 +27,11 @@ function App() {
       <Route path='/Login' element={<Login/>}/>
       <Route path='/Review' element={<Review/>}/>
       <Route path='/Gallery' element={<Gallery/>}/>
+      <Route path='/Resort' element={<Resort/>}/>
       </Routes>
      </Router>
 
-    
+    <Footer/>
     
      
     </>

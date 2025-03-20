@@ -38,7 +38,7 @@ const Header = () => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>
               <Link to="/Package"  className="link-tag"> <li className="nav-item"><a className="nav-link" href="#Package">Packages</a></li></Link>
-              <li className="nav-item"><a className="nav-link" href="#resort">Resort</a></li>
+             <Link to="/Resort" className='link-tag'> <li className="nav-item"><a className="nav-link" href="#resort">Resort</a></li></Link>
               
               {/* Visitor Stories */}
               <li className="nav-item dropdown">
