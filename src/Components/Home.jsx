@@ -37,7 +37,7 @@ const Home = () => {
                 </section>
 
                 <Services/>
-                {/* <Destination/> */}
+                <Destination/>
                 </>
       
 

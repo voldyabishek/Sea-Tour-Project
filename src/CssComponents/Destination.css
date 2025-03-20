@@ -1,173 +1,149 @@
-/* General Styles */
-.destination-container {
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    background: linear-gradient(to bottom, #001f3f, #004d7a);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Hero Section */
-  .hero-section {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hero-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 30px 50px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-  }
-  
-  .hero-overlay h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .hero-overlay p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-  }
-  
-  .btn-primary {
-    padding: 12px 25px;
-    font-size: 1rem;
-    background: #ffcc00;
-    color: #001f3f;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .btn-primary:hover {
-    background: #ffdb4d;
-    transform: scale(1.05);
-  }
-  
-  /* Content Sections */
-  .content-section {
-    margin: 50px 0;
-    padding: 40px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-  }
-  
-  .content-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #ffcc00;
-  }
-  
-  /* Key Attractions & Packages */
-  .grid-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .glass-card {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
-  }
-  
-  .glass-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .icon-style {
-    font-size: 2rem;
-    color: #ffcc00;
-    margin-bottom: 10px;
-  }
-  
-  .glass-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .glass-card .price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ffcc00;
-  }
-  
-  /* Destination Grid */
-  .destination-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .destination-card {
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    display: flex;
-    align-items: flex-end;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    z-index: -1;
-  }
-  
-  .destination-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
-  }
-  
-  /* Testimonials */
-  .testimonial-card {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 20px;
-    border-radius: 12px;
-    width: 280px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .testimonial-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .testimonial-card p {
-    font-size: 1rem;
-    font-style: italic;
-  }
-  
-  .testimonial-card h4 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #ffcc00;
-  }
-  
+/* CSS for the Destination Component */
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;  /* Full viewport height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  filter: brightness(0.6);  /* Dim the video */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 10;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);  /* Dark overlay */
+  border-radius: 15px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.hero-overlay h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  background-color: #007b7f; /* Aqua color */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #005f5f;
+}
+
+/* Content Section */
+.content-section {
+  padding: 60px 20px;
+  background-color: #f1f1f1;
+  position: relative;
+  z-index: 5;
+}
+
+.content-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+/* Destination Cards */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.destination-card {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.destination-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Testimonials */
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.testimonial-card h4 {
+  font-weight: bold;
+  text-align: right;
+  color: #007b7f;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}

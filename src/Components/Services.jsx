@@ -6,7 +6,6 @@ const Services = () => {
   return (
     <>
       <section className=" services">
-        
         <div className="services-page">
           <header className="services-header">
             <h1>Welcome to Our Services</h1>
@@ -39,13 +38,12 @@ const Services = () => {
             </div>
           </div>
         </div>
-        {/* <div className='service-Video'>
-        <video className='service-Video' autoPlay loop muted>
-          <source src="Video6.mp4" type="video/mp4" />
-
-        </video>
-        </div> */}
+        
       </section>
+
+      {/* <video className='service-Video' autoPlay loop muted>
+          <source src="MainPage-Video.mp4" type="video/mp4" />
+        </video> */}
     </>
   );
 };
