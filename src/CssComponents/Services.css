@@ -1,16 +1,23 @@
 /*  services cards */
+ 
 
 
-.services{
-  
-  /* background-color: #865b09f5; */
+.service-Video{
+  transform: rotate(180deg);
+  position:absolute;
+  min-height: auto;
+  min-width:50px;
+  top:250px;
+  z-index: -1;
+  overflow:hidden;
+
 }
 
 .services-page {
     font-family: 'Arial', sans-serif;
     padding: 20px;
     margin: 0;
-    /* background-color: #0947334f; */
+   
     /* background: linear-gradient(to right, #045043c0, #e4e5e696); */
     color: #fff;
    
@@ -43,7 +50,7 @@
   .services h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #2d3b55;
+    color: #fefefe;
   }
   
   .services-cards {
@@ -80,12 +87,12 @@
   .service-card h4 {
     font-size: 1.5rem;
     margin: 10px 0;
-    color: #333;
+    color: #ffffff;
   }
   
   .service-card p {
     font-size: 1rem;
-    color: #666;
+    color: #e7e3e3;
     margin: 0;
   }
   

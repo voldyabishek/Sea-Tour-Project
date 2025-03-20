@@ -41,9 +41,9 @@ const Services = () => {
         
       </section>
 
-      {/* <video className='service-Video' autoPlay loop muted>
+      <video className='service-Video' autoPlay loop muted>
           <source src="MainPage-Video.mp4" type="video/mp4" />
-        </video> */}
+        </video>
     </>
   );
 };
