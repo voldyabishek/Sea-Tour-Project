@@ -1,122 +1,93 @@
-import React from "react";
-import { motion } from "framer-motion";
-import "../CssComponents/Resort.css";
+import React, { useState } from 'react';
+import '../CssComponents/Resort.css'; // Import the updated CSS file
 
-const Resort = () => {
-  const handleImageClick = (imageSrc) => {
-    // You can add functionality here if needed for handling image clicks
-    console.log("Image clicked:", imageSrc);
+function Resort() {
+  const [checkInDate, setCheckInDate] = useState('');
+  const [checkOutDate, setCheckOutDate] = useState('');
+  const [guests, setGuests] = useState(1);
+  const [selectedRoom, setSelectedRoom] = useState('');
+
+  const handleBooking = () => {
+    console.log('Booking Details:', {
+      checkInDate,
+      checkOutDate,
+      guests,
+      selectedRoom,
+    });
+    alert('Booking request submitted!');
   };
 
   return (
-    <section className="resort">
-      {/* Video Background */}
-      <div className="video-background">
-        <video autoPlay loop muted>
-          <source src="Video5.mp4" type="video/mp4" />
-        </video>
-      </div>
+    <div className="booking-page">
+      <header className="booking-header">
+        <h1>Your Dream Sea Tour Resort Awaits</h1>
+        <p>Book your unforgettable experience with us.</p>
+      </header>
 
-      {/* Resort Content */}
-      <div className="resort-content">
-        {/* Header */}
-        <div className="resort-header">
-          <motion.h1
-            className="animated-title"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
-            Discover Your Paradise
-          </motion.h1>
-          <motion.p
-            className="animated-description"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            Welcome to the most luxurious resort experience by the sea. Your
-            journey to paradise begins here.
-          </motion.p>
-        </div>
+      <section className="booking-form-section">
+        <div className="booking-form-container">
+          <h2>Make a Reservation</h2>
+          <form className="booking-form">
+            <div className="form-group">
+              <label htmlFor="checkInDate">Check-in Date:</label>
+              <input
+                type="date"
+                id="checkInDate"
+                value={checkInDate}
+                onChange={(e) => setCheckInDate(e.target.value)}
+                required
+              />
+            </div>
 
-        {/* Image Gallery */}
-        <div className="resort-images">
-          <h2 className="section-title">Our Stunning Sea Stays</h2>
-          <div className="image-gallery">
-            {["card-Img1.jpg", "card-BGImg1.jpg", "card-BGImg2.jpg"].map(
-              (src, index) => (
-                <motion.div
-                  className="image-item"
-                  key={index}
-                  onClick={() => handleImageClick(src)}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <img
-                    src={src}
-                    alt={`Sea Stay ${index + 1}`}
-                    className="animated-image"
-                  />
-                </motion.div>
-              )
-            )}
-          </div>
-        </div>
+            <div className="form-group">
+              <label htmlFor="checkOutDate">Check-out Date:</label>
+              <input
+                type="date"
+                id="checkOutDate"
+                value={checkOutDate}
+                onChange={(e) => setCheckOutDate(e.target.value)}
+                required
+              />
+            </div>
 
-        {/* Amenities Section */}
-        <div className="resort-amenities">
-          <h2 className="section-title">Our Amenities</h2>
-          <div className="amenities-list">
-            {[
-              {
-                title: "Beachfront View",
-                description:
-                  "Enjoy a stunning view of the ocean right from your room.",
-              },
-              {
-                title: "Spa & Wellness",
-                description: "Relax and rejuvenate with world-class spa services.",
-              },
-              {
-                title: "Gourmet Dining",
-                description:
-                  "Indulge in gourmet cuisine with fresh, local ingredients.",
-              },
-            ].map((amenity, index) => (
-              <div className="amenity" key={index}>
-                <motion.h3
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.2 + index * 0.1 }}
-                >
-                  {amenity.title}
-                </motion.h3>
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.4 + index * 0.1 }}
-                >
-                  {amenity.description}
-                </motion.p>
-              </div>
-            ))}
-          </div>
-        </div>
+            <div className="form-group">
+              <label htmlFor="guests">Number of Guests:</label>
+              <input
+                type="number"
+                id="guests"
+                min="1"
+                value={guests}
+                onChange={(e) => setGuests(parseInt(e.target.value))}
+                required
+              />
+            </div>
 
-        {/* Call to Action */}
-        <div className="cta-booking">
-          <motion.button
-            className="booking-btn"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            Book Your Stay
-          </motion.button>
+            <div className="form-group">
+              <label htmlFor="roomType">Room Type:</label>
+              <select
+                id="roomType"
+                value={selectedRoom}
+                onChange={(e) => setSelectedRoom(e.target.value)}
+              >
+                <option value="">Select Room</option>
+                <option value="ocean-view-suite">Ocean View Suite</option>
+                <option value="deluxe-cabin">Deluxe Cabin</option>
+                <option value="family-room">Family Room</option>
+              </select>
+            </div>
+
+            <button type="button" className="book-button" onClick={handleBooking}>
+              Book Now
+            </button>
+          </form>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <footer className="booking-footer">
+        <p>&copy; {new Date().getFullYear()} Your Sea Tour Resort. All rights reserved.</p>
+      </footer>
+    </div>
   );
-};
+}
 
 export default Resort;

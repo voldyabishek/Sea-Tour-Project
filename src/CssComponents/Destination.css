@@ -1,240 +1,206 @@
 /* General Styles */
-body {
+.destination-container {
   font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  color: #e0f7fa; /* Light teal for text */
+  background: linear-gradient(to right, #043d3450, #71777c96); /* Deep sea gradient */
+  padding-bottom: 50px;
 }
 
-h2, h4 {
-  color: #333;
-  font-family: 'Playfair Display', serif;
+.content-section {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Hero Section */
+.content-section h2 {
+  color: #4dd0e1; /* Lighter teal for headings */
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Section (Assuming you have this) */
 .hero-section {
   position: relative;
-  width: 100%;
-  height: 100vh;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 600px; /* Adjust as needed */
 }
 
 .hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: translate(-50%, -50%);
-  filter: brightness(0.6);
 }
 
 .hero-overlay {
   position: absolute;
-  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  width: 80%;
-  max-width: 500px;
-  z-index: 10;
+  color: white;
+  z-index: 1;
 }
 
 .hero-overlay h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .hero-overlay p {
   font-size: 1.2rem;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .btn-primary {
-  padding: 12px 24px;
-  background-color: #007b7f;
+  background-color: #00bcd4; /* Teal button */
   color: white;
+  padding: 12px 24px;
   border: none;
-  border-radius: 50px;
-  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #005f5f;
+  background-color: #00acc1; /* Darker teal on hover */
 }
 
-/* Content Section */
-.content-section {
-  padding: 60px 20px;
-  /* background-color: #f1f1f1; */
-  background: linear-gradient(to right, #045043c0, #e4e5e696,#01232aca);
-}
-
-.content-section h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
+/* Top Destinations */
 .destination-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .destination-card {
+  position: relative;
+  height: 350px;
   background-size: cover;
   background-position: center;
-  height: 300px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
-  background: linear-gradient(to right, #045043c0, #e4e5e696);
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .destination-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.destination-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover .destination-overlay {
+  transform: translateY(0);
+}
+
+.destination-overlay h3 {
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.destination-overlay p {
+  font-size: 0.9rem;
+}
+
+/* Testimonials */
+.testimonial-slider {
+  width: 90%;
+  margin: 20px auto;
 }
 
 .testimonial-card {
-  background: linear-gradient(to right, #768582c0, #e4e5e696);
-  border-radius: 10px;
+  text-align: center;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  transition: box-shadow 0.3s ease;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  border-radius: 10px;
+  margin: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial-card p {
   font-style: italic;
   font-size: 1.1rem;
-  margin-bottom: 20px;
-  color: #555;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .testimonial-card h4 {
   font-weight: bold;
-  text-align: right;
-  color: #007b7f;
+  color: #80deea; /* Light blue for names */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+/* Modal Styles */
+.destination-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-/* Media Queries for Responsiveness */
-
-/* For tablets and smaller devices */
-@media (max-width: 1024px) {
-  .hero-overlay {
-    padding: 20px;
-    width: 90%;
-    max-width: 400px;
-  }
-
-  .destination-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-
-  .destination-card {
-    height: 250px;
-    font-size: 1.2rem;
-  }
-
-  .content-section h2 {
-    font-size: 2rem;
-  }
-
-  .btn-primary {
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
-
-  .testimonial-card {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
+.modal-content {
+  background: #02302296; 
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
-/* For mobile devices */
+.modal-content img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  color: #4dd0e1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .hero-overlay {
-    padding: 15px;
-    width: 90%;
-    max-width: 350px;
-  }
-
   .destination-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 
-  .destination-card {
-    height: 200px;
-    font-size: 1rem;
+  .hero-section {
+    height: 400px;
   }
 
-  .content-section h2 {
-    font-size: 1.8rem;
-  }
-
-  .btn-primary {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-  }
-
-  .testimonial-card {
-    padding: 15px;
-    margin-bottom: 15px;
-  }
-
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* For very small screens */
-@media (max-width: 480px) {
   .hero-overlay h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero-overlay p {
     font-size: 1rem;
-  }
-
-  .destination-card {
-    font-size: 1rem;
-  }
-
-  .content-section h2 {
-    font-size: 1.6rem;
-  }
-
-  .btn-primary {
-    padding: 6px 12px;
-    font-size: 0.8rem;
-  }
-
-  .testimonial-card {
-    padding: 10px;
-    margin-bottom: 10px;
   }
 }
