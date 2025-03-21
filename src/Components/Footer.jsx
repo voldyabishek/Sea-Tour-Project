@@ -35,16 +35,16 @@ function Footer() {
             <i className="fas fa-map-marker-alt"></i> 123 Ocean View Street, Seaside City
           </p>
           <p>
-            <i className="fas fa-phone"></i> +1 (555) 123-4567
+            <i className="fas fa-phone"></i> +91 7094578319
           </p>
           <p>
-            <i className="fas fa-envelope"></i> info@seatours.com
+            <i className="fas fa-envelope"></i> Bengal Water01@gmail.com
           </p>
         </div>
 
         <div className="footer-section newsletter">
-          <h3 className="footer-title">Newsletter</h3>
-          <p>Subscribe to our newsletter for updates and special offers.</p>
+          <h3 className="footer-title">Get Our Daily Updates</h3>
+          <p>Subscribe our daily updates and special offers.</p>
           <form className="newsletter-form">
             <input type="email" placeholder="Your email address" required />
             <button type="submit">Subscribe</button>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header'
+import Navbar from './Navbar'
 import '../CssComponents/Mainsection.css'
 import { Link } from 'react-router-dom'
 
@@ -15,7 +15,7 @@ const Home = () => {
   return (
     
         <>
-      <Header/>
+      <Navbar/>
   
             {/* Section 1 */}
             <section className='section-1'>
