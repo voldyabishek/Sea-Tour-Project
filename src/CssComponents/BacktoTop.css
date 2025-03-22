@@ -1,0 +1,51 @@
+/* BackToTopButton.css */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #1e90ff;
+    font-size: 40px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    opacity: 0; /* Start with 0 opacity for animation */
+    transition: opacity 0.3s ease;
+    animation: fishSwim 4s ease-in-out infinite;
+  }
+  
+  /* Show the button when scrolled down */
+  .show {
+    display: block;
+    opacity: 1; /* Fade in */
+  }
+  
+  /* Natural fish swimming animation */
+  @keyframes fishSwim {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    20% {
+      transform: translateX(5px) translateY(3px) rotate(5deg);
+    }
+    40% {
+      transform: translateX(10px) translateY(5px) rotate(-5deg);
+    }
+    60% {
+      transform: translateX(5px) translateY(3px) rotate(5deg);
+    }
+    80% {
+      transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-5px) translateY(-3px) rotate(-5deg);
+    }
+  }
+  
+  /* Add hover effect */
+  .back-to-top:hover {
+    color: #ff4500; /* Change color on hover */
+  }
+  
