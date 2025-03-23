@@ -6,25 +6,22 @@ import '../CssComponents/BacktoTop.css'; // Import the CSS for the component
 const BacktoTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show the button when the user scrolls down
   const handleScroll = () => {
-    if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+    if (document.documentElement.scrollTop > 300 || document.body.scrollTop > 300) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
     }
   };
 
-  // Add event listener for scroll
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll); // Clean up the event listener
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  // Scroll smoothly back to the top when clicked
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -37,8 +34,10 @@ const BacktoTop = () => {
       id="back-to-top"
       className={`back-to-top ${isVisible ? 'show' : ''}`}
       onClick={scrollToTop}
+      aria-label="Back to top"
     >
-      🐟<br/><span>Back To Top</span>
+      <span className="icon">▲</span>
+      <span className="text">Top</span>
     </button>
   );
 };

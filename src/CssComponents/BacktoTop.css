@@ -1,51 +1,52 @@
-/* BackToTopButton.css */
+/* BacktoTop.css */
 
 .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: transparent;
-    color: #1e90ff;
-    font-size: 40px;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    display: none; /* Hidden by default */
-    opacity: 0; /* Start with 0 opacity for animation */
-    transition: opacity 0.3s ease;
-    animation: fishSwim 4s ease-in-out infinite;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out, background-color 0.3s ease;
+  transform: translateY(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  color: #333;
+  font-size: 16px;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top .icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.back-to-top .text {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px;
   }
-  
-  /* Show the button when scrolled down */
-  .show {
-    display: block;
-    opacity: 1; /* Fade in */
-  }
-  
-  /* Natural fish swimming animation */
-  @keyframes fishSwim {
-    0% {
-      transform: translateX(0) translateY(0) rotate(0deg);
-    }
-    20% {
-      transform: translateX(5px) translateY(3px) rotate(5deg);
-    }
-    40% {
-      transform: translateX(10px) translateY(5px) rotate(-5deg);
-    }
-    60% {
-      transform: translateX(5px) translateY(3px) rotate(5deg);
-    }
-    80% {
-      transform: translateX(0) translateY(0) rotate(0deg);
-    }
-    100% {
-      transform: translateX(-5px) translateY(-3px) rotate(-5deg);
-    }
-  }
-  
-  /* Add hover effect */
-  .back-to-top:hover {
-    color: #ff4500; /* Change color on hover */
-  }
-  
+}

@@ -7,7 +7,7 @@ import Services from './Services'
 import Destination from './Destination'
 // JQuaery for back to Top Button Script 
 import "../JScomponent/Backtotop"
-import BacktoTop from './BacktoTop'
+
 const Home = () => {
 
   const scrollToBooking = () => {
@@ -45,7 +45,7 @@ const Home = () => {
 
       <Services />
       <Destination />
-      <BacktoTop/>
+ 
     </>
 
 

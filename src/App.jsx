@@ -12,6 +12,7 @@ import Gallery from './components/Gallery'
 import Resort from './Components/Resort'
 
 import Footer from './Components/Footer'
+import BacktoTop from './Components/BacktoTop'
 function App() {
   
 
@@ -32,6 +33,7 @@ function App() {
      </Router>
 
     <Footer/>
+    <BacktoTop/>
     
      
     </>
