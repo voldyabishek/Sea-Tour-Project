@@ -42,13 +42,38 @@ const Home = () => {
 
       <Services />
       {/* this div for croos scroling animation with image section */}
+
+    
+
       <div className="skw-pages">
+
+{/* 1 */}
+<div className="skw-page skw-page-1">
+    <div className="skw-page__half skw-page__half--left">
+      <div className="skw-page__skewed">
+        <div className="skw-page__content">
+          <h2 className="skw-page__heading">Our Amazing Resorts</h2>
+          <p className="skw-page__description">Our Amazing Resorts offers a luxurious and unforgettable escape, featuring world-class amenities, breathtaking views, and exceptional hospitality. Whether you're seeking relaxation or adventure, our resorts provide the perfect retreat for an extraordinary experience.</p>
+        </div>
+      </div>
+    </div>
+    <div className="skw-page__half skw-page__half--right">
+      <div className="skw-page__skewed">
+        <div className="skw-page__content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{/* 2 */}
+
   <div className="skw-page skw-page-2">
     <div className="skw-page__half skw-page__half--left">
       <div className="skw-page__skewed">
         <div className="skw-page__content">
-          <h2 className="skw-page__heading">Page 2</h2>
-          <p className="skw-page__description">Nothing to do here, continue scrolling.</p>
+          <h2 className="skw-page__heading">Our Amazing Resorts</h2>
+          <p className="skw-page__description">Our Amazing Resorts offers a luxurious and unforgettable escape, featuring world-class amenities, breathtaking views, and exceptional hospitality. Whether you're seeking relaxation or adventure, our resorts provide the perfect retreat for an extraordinary experience.</p>
         </div>
       </div>
     </div>
@@ -59,37 +84,44 @@ const Home = () => {
       </div>
     </div>
   </div>
-  <div className="skw-page skw-page-3">
-    <div className="skw-page__half skw-page__half--left">
-      <div className="skw-page__skewed">
-        <div className="skw-page__content"></div>
-      </div>
-    </div>
-    <div className="skw-page__half skw-page__half--right">
-      <div className="skw-page__skewed">
-        <div className="skw-page__content">
-          <h2 className="skw-page__heading">Page 3</h2>
-          <p className="skw-page__description">The end is near, I promise!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="skw-page skw-page-4">
+{/* 3 */}
+
+<div className="skw-page skw-page-3">
     <div className="skw-page__half skw-page__half--left">
       <div className="skw-page__skewed">
         <div className="skw-page__content">
-          <h2 className="skw-page__heading">Page 4</h2>
-          <p className="skw-page__description">Ok, ok, just one more scroll!</p>
+          <h2 className="skw-page__heading">Our Amazing Resorts</h2>
+          <p className="skw-page__description">Our Amazing Resorts offers a luxurious and unforgettable escape, featuring world-class amenities, breathtaking views, and exceptional hospitality. Whether you're seeking relaxation or adventure, our resorts provide the perfect retreat for an extraordinary experience.</p>
         </div>
       </div>
     </div>
     <div className="skw-page__half skw-page__half--right">
       <div className="skw-page__skewed">
-        <div className="skw-page__content"></div>
+        <div className="skw-page__content">
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+{/* 4 */}
+<div className="skw-page skw-page-4">
+    <div className="skw-page__half skw-page__half--left">
+      <div className="skw-page__skewed">
+        <div className="skw-page__content">
+          <h2 className="skw-page__heading">Our Amazing Resorts</h2>
+          <p className="skw-page__description">Our Amazing Resorts offers a luxurious and unforgettable escape, featuring world-class amenities, breathtaking views, and exceptional hospitality. Whether you're seeking relaxation or adventure, our resorts provide the perfect retreat for an extraordinary experience.</p>
+        </div>
+      </div>
+    </div>
+    <div className="skw-page__half skw-page__half--right">
+      <div className="skw-page__skewed">
+        <div className="skw-page__content">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
       <Destination />
  
     </>

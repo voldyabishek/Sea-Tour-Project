@@ -194,18 +194,25 @@
     color: #ffa0a0;
   }
   
- 
+  .skw-page-1 .skw-page__half--left .skw-page__content {
+    background-image: url(" sunset.jpg");
+  }
+  
+  .skw-page-1 .skw-page__half--right .skw-page__content {
+    background: lighten(#1c1c1c, 5%);
+  }
+  
   
   .skw-page-2 .skw-page__half--left .skw-page__content {
     background: lighten(#1c1c1c, 5%);
   }
   
   .skw-page-2 .skw-page__half--right .skw-page__content {
-    background-image: url("sunset.jpg");
+    background-image: url("seaViewresort-img.avif");
   }
   
   .skw-page-3 .skw-page__half--left .skw-page__content {
-    background-image: url(" oceanSuit-img.jpg");
+    background-image: url("sunset.jpg ");
   }
   
   .skw-page-3 .skw-page__half--right .skw-page__content {
@@ -217,7 +224,7 @@
   }
   
   .skw-page-4 .skw-page__half--right .skw-page__content {
-    background-image: url("seaCabin-img.jpg");
+    background-image: url("seaViewresort-img.avif");
   }
   
  
