@@ -100,15 +100,15 @@
     left: 0;
     top: 0;
     width: 100%;
-    transition: opacity 1s; /* Add transition for opacity */
+    transition: opacity 1s;
 }
 
 .skw-page.inactive {
-    opacity: 0; /* Initially hide all pages */
+    opacity: 0;
 }
 
 .skw-page.active {
-    opacity: 1; /* Show active page */
+    opacity: 1;
 }
 
 .skw-page__half {
@@ -232,9 +232,47 @@
 .skw-page-4 .skw-page__half--right .skw-page__content {
     background-image: url("seaViewresort-img.avif");
 }
- 
-  
 
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .skw-page__half {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Allow content to determine height */
+        position: relative; /* Remove absolute positioning */
+        transform: none; /* Remove transformations */
+    }
+
+    .skw-page__half--left,
+    .skw-page__half--right {
+        left: 0; /* Reset left position */
+    }
+
+    .skw-page__skewed {
+        width: 100%; /* Full width */
+        transform: none; /* Remove skew */
+    }
+
+    .skw-page__content {
+        padding: 20px; /* Adjust padding */
+        transform: none; /* Remove skew */
+    }
+
+    .skw-page-1 .skw-page__half--left .skw-page__content,
+    .skw-page-2 .skw-page__half--right .skw-page__content,
+    .skw-page-3 .skw-page__half--left .skw-page__content,
+    .skw-page-4 .skw-page__half--right .skw-page__content {
+        background-size: cover; /* Ensure images cover the content */
+    }
+
+    .skw-page__heading {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .skw-page__description {
+        font-size: 16px; /* Adjust description size */
+    }
+}
   /* Responsive Design */
   @media (max-width: 768px) {
     .maintext h3 {

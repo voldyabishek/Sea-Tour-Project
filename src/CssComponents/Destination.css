@@ -14,8 +14,10 @@
 }
 
 .content-section h2 {
-  color: #4dd0e1; /* Lighter teal for headings */
+  color: #2f1706; /* Lighter teal for headings */
   margin-bottom: 30px;
+  font-family: fantasy;
+  font-size: 55px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -178,7 +180,7 @@
 
 .modal-content h2 {
   margin-bottom: 15px;
-  color: #4dd0e1;
+  color: #2f1706;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 

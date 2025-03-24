@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var curPage = 1;
     var numOfPages = $(".skw-page").length;
-    var animTime = 1000;
+    var animTime = 5000;
     var scrolling = false;
     var pgPrefix = ".skw-page-";
   
@@ -41,9 +41,9 @@ $(document).ready(function() {
   
     $(document).on("keydown", function(e) {
       if (scrolling) return;
-      if (e.which === 38) {
+      if (e.which === 60) {
         navigateUp();
-      } else if (e.which === 40) {
+      } else if (e.which === 80) {
         navigateDown();
       }
     });
