@@ -31,7 +31,7 @@ function App() {
       <Route path='/Resort' element={<Resort/>}/>
       </Routes>
      </Router>
-
+     
     <Footer/>
     <BacktoTop/>
     

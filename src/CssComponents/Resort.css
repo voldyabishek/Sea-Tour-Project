@@ -1,16 +1,11 @@
 /* Resort.css */
 
 .booking-page {
-  font-family: 'Montserrat', sans-serif; /* Use a modern font like Montserrat */
-  color: #333;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   position: relative;
+  width: 100%;
   overflow: hidden;
-  background-color: #f8f8f8; /* Light background */
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
 
 .background-video {
@@ -20,55 +15,51 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* z-index: ; */
+  z-index: -1;
 }
 
 .content-wrapper {
   position: relative;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.211); /* Slightly transparent white for content */
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  padding: 2rem; /* Add some padding around the content */
+  padding: 20px;
+ 
+  margin: auto;
+  max-width: 1200px;
 }
 
 .booking-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 40px;
 }
 
 .booking-header h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #2c3e50; /* Darker heading color */
-  margin-bottom: 1rem;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #42320e;
 }
 
 .booking-header p {
-  font-size: 1.1rem;
-  color: #7f8c8d; /* Muted paragraph color */
+  font-size: 1.1em;
+  color: #d4caca;
 }
 
 .offers-section {
+  margin-bottom: 40px;
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 .offers-section h2 {
-  font-size: 2rem;
-  color: #2c3e50;
-  margin-bottom: 2rem;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #42320e;
 }
 
 .offer-item {
-  background-color: #fff;
-  padding: 2rem;
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin: 1rem auto;
-  max-width: 600px;
-  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -77,132 +68,180 @@
 }
 
 .offer-item h3 {
-  font-size: 1.5rem;
-  color: #34495e;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
+  color: #42320e;
 }
 
 .offer-item p {
-  font-size: 1rem;
-  color: #7f8c8d;
+  color: #555;
+}
+
+.offer-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 10px;
 }
 
 .booking-form-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 40px;
 }
 
 .booking-form-container {
-  background-color: #fff;
-  padding: 3rem;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 600px;
+  margin: 0 auto;
 }
 
-.booking-form h2 {
-  font-size: 2rem;
-  color: #2c3e50;
+.booking-form-container h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
+  color: #42320e;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .form-group label {
   display: block;
-  font-size: 1rem;
-  color: #34495e;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
 }
 
-.form-group input,
-.form-group select,
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group input[type="text"],
 .form-group textarea {
-  width: 100%;
-  padding: 1rem;
+  width: calc(100% - 22px);
+  padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 6px;
-  box-sizing: border-box;
-  font-size: 1rem;
-  color: #333;
+  border-radius: 4px;
+  font-size: 1em;
 }
 
 .form-group textarea {
   resize: vertical;
 }
 
+.room-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.room-card {
+  width: 180px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.room-card p {
+  color: #333;
+}
+
+.room-card:hover,
+.room-card.selected {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: #42320e;
+}
+
 .promo-input {
   display: flex;
 }
 
-.promo-input input {
-  flex: 1;
+.promo-input input[type="text"] {
+  flex-grow: 1;
   margin-right: 10px;
 }
 
-.promo-input button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.promo-input button:hover {
-  background-color: #2980b9;
-}
-
 .book-button {
-  background-color: #2ecc71;
+  background-color: #42320e;
   color: white;
-  padding: 1rem 1.5rem;
+  padding: 12px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
+  font-size: 1em;
   cursor: pointer;
-  font-size: 1.1rem;
   transition: background-color 0.3s ease;
-  width: 100%;
 }
 
 .book-button:hover {
-  background-color: #27ae60;
+  background-color: #0056b3;
 }
 
-.success-message,
-.error-message {
+.success-message, .error-message {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
 }
 
 .success-message {
-  color: #2ecc71;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
 }
 
 .error-message {
-  color: #e74c3c;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
 }
 
-.booking-footer {
-  text-align: center;
-  padding: 2rem 0;
-  background-color: #ecf0f1;
-  color: #7f8c8d;
-  font-size: 0.9rem;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  .booking-form-container,
-  .offer-item {
-    padding: 2rem;
+  .booking-header h1 {
+      font-size: 2em;
+  }
+
+  .booking-form-container {
+      padding: 20px;
+  }
+
+  .room-cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .room-card {
+      width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-header h1 {
+      font-size: 1.8em;
+  }
+  .promo-input{
+      flex-direction: column;
+  }
+  .promo-input input[type="text"]{
+      margin-right:0;
+      margin-bottom: 10px;
   }
 }
