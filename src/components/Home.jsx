@@ -8,6 +8,11 @@ import Destination from "./Destination";
 // JQuaery for back to Top Button Script
 import "../JScomponent/imgCroses.js";
 
+// import images
+
+import "../assets/sunset.jpg"
+import "../assets/seaViewresort-img.AVIF"
+import "../assets/vibrentBeach-img.jpg"
 const Home = () => {
   const scrollToBooking = () => {
     const bookingSection = document.getElementById("booking");
