@@ -67,8 +67,7 @@ const Destination = () => {
 
   return (
     <div className="destination-container">
-      {/* Hero Section */}
-      {/* ... (your hero section code remains the same) ... */}
+     
 
       {/* Top Destinations */}
       <motion.div

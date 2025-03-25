@@ -18,7 +18,7 @@ const Header = () => {
           </a>
           {/* logo-text */}
           <div id='logo-text'>
-            <h3>Bengal <span id='waters'>Waters</span></h3>
+            <h3>Sea<span id='waters'>Tour Project</span></h3>
           </div>
           {/* toggle-button */}
           <button
@@ -38,8 +38,12 @@ const Header = () => {
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>
+              {/* home */}
+              <Link to="/" className="link-tag">
+              <li className="nav-item"><a className="nav-link" href="#home">Home</a></li></Link>
+              {/* packages */}
               <Link to="/Package"  className="link-tag"> <li className="nav-item"><a className="nav-link" href="#Package">Packages</a></li></Link>
+              {/* resort */}
              <Link to="/Resort" className='link-tag'> <li className="nav-item"><a className="nav-link" href="#resort">Resort</a></li></Link>
               
               {/* Visitor Stories */}

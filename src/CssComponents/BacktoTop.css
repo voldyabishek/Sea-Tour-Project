@@ -4,7 +4,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.514);
   border: none;
   border-radius: 50%;
   padding: 12px;
@@ -24,7 +24,7 @@
 }
 
 .back-to-top:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgb(255, 255, 255);
   transform: translateY(-3px);
 }
 

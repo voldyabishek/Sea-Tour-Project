@@ -22,8 +22,7 @@ function Footer() {
           <h3 className="footer-title">Quick Links</h3>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Tours</a></li>
-            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Our Location</a></li>
             <li><a href="#">Booking</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -53,7 +52,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Sea Tours. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Sea Tour! frontEnd React project created by @Abishek </p>
       </div>
     </footer>
   );
