@@ -27,10 +27,10 @@ const Booking = () => {
             <label for="destination">Select Destination:</label>
             <select id="destination" name="destination" required>
                 <option value="">-- Choose a Destination --</option>
-                <option value="paris">Paris, France</option>
-                <option value="bali">Bali, Indonesia</option>
-                <option value="rome">Rome, Italy</option>
-                <option value="maldives">Maldives</option>
+                <option value="paris">Deep Sea Fishing</option>
+                <option value="bali">Expirience With Local Fisherman</option>
+                <option value="rome">Beach Stays</option>
+                <option value="maldives">Family pack</option>
             </select>
 
             <label for="date">Travel Date:</label>

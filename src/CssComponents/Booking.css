@@ -20,11 +20,14 @@
 
 .form-container {
     position: relative;
+    justify-content: center;
+    /* left:300px; */
     background-color: rgba(66, 70, 70, 0.466); /* Semi-transparent background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    min-width:50%;
 }
 
 h2 {
@@ -50,7 +53,7 @@ input, select, textarea {
 }
 
 textarea {
-    resize: none;
+    resize:both;
 }
 
 .Booknow{
