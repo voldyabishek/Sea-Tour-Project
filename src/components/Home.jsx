@@ -69,11 +69,6 @@ const Home = () => {
                   soul. As the day gracefully surrenders to the twilight,
                   witness the breathtaking spectacle of an amazing sunset
                   painting the sky with vibrant hues of orange, pink, and gold.
-                  Our carefully curated tour allows you to capture these magical
-                  moments, creating memories that will forever shimmer in your
-                  heart. Whether you're seeking a romantic escape, a family
-                  adventure, or a serene retreat, our sea tour promises an
-                  enchanting experience, culminating in nature's most dazzling
                   display – a truly amazing sunset.
                 </p>
               </div>
@@ -117,12 +112,7 @@ const Home = () => {
                   Immerse yourself in the vibrant tapestry of beach life with
                   our exhilarating sea tour, where every moment is a celebration
                   of sun, sand, and the sparkling sea. Feel the rhythm of the
-                  waves as we explore hidden coves and sun-kissed shores, each
-                  teeming with lively energy and the promise of adventure. From
-                  the thrill of water sports to the serenity of lounging on
-                  pristine beaches, our tour offers a kaleidoscope of
-                  experiences. Discover the local culture, savor delicious
-                  seaside cuisine, and witness the captivating spectacle of
+                  waves as we explore hidden coves and sun-kissed shores,  and witness the captivating spectacle of
                   coastal sunsets. Join us and embrace the vibrant beach life,
                   where every day is a festival of joy and unforgettable
                   memories.
@@ -140,13 +130,7 @@ const Home = () => {
                 <p  className="skw-page__description">
                   Dive into the heart of the ocean's mysteries with our deep sea
                   adventure tour, where the thrill of exploration meets the
-                  tranquility of the vast blue. Journey beyond the familiar
-                  coastline and discover a world teeming with vibrant marine
-                  life, hidden reefs, and the awe-inspiring depths of the sea.
-                  Our experienced guides will lead you on an unforgettable
-                  expedition, revealing the secrets that lie beneath the
-                  surface. From encountering playful dolphins to witnessing the
-                  majestic dance of whales, this tour promises an
+                  tranquility of the vast blue. 
                   adrenaline-pumping yet serene experience, inviting you to
                   connect with the untamed beauty of the deep sea.
                 </p>
