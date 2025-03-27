@@ -276,10 +276,13 @@
     }
 }
 
-@media (max-width: 480px){
- .skw-pages{display:none;
+/* .skw-pages{display:none;} */
 
- }}
+
+
+@media (max-width: 480px){
+ .skw-pages{display:none;}
+}
 
   /* Responsive Design */
   @media (max-width: 768px) {

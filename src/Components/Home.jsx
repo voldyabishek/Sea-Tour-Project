@@ -11,7 +11,7 @@ import "../JScomponent/imgCroses.js";
 // import images
 
 import "../assets/sunset.jpg"
-import "../assets/seaViewresort-img.AVIF"
+import "../assets/seaViewresort-img.avif"
 import "../assets/vibrentBeach-img.jpg"
 const Home = () => {
   const scrollToBooking = () => {
