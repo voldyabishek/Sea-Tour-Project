@@ -204,7 +204,7 @@
 }
 
 .skw-page-1 .skw-page__half--left .skw-page__content {
-    background-image: url("sunset.jpg");
+    background-image: url("../assets/sunset.jpg");
 }
 
 .skw-page-1 .skw-page__half--right .skw-page__content {
@@ -216,11 +216,11 @@
 }
 
 .skw-page-2 .skw-page__half--right .skw-page__content {
-    background-image: url("seaViewresort-img.avif");
+    background-image: url("../assets/seaViewresort-img.avif");
 }
 
 .skw-page-3 .skw-page__half--left .skw-page__content {
-    background-image: url("vibrentBeach-img.jpg");
+    background-image: url("../assets/vibrentBeach-img.jpg");
 }
 
 .skw-page-3 .skw-page__half--right .skw-page__content {
@@ -232,7 +232,7 @@
 }
 
 .skw-page-4 .skw-page__half--right .skw-page__content {
-    background-image: url("seaViewresort-img.avif");
+    background-image: url("../assets/seaViewresort-img.avif");
 }
 
 /* Media Queries for  croos text with image Responsiveness */
